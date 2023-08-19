@@ -15,7 +15,9 @@ function ShipDetails() {
             30 days return policy
           </h1>
           <p className="text-sm md:flex hidden">
-            Get your money back for any purchase
+            Get your money back for any purchase Get your money back for any
+            purchase Get your money back for any purchase Get your money back
+            for any purchase Get your money back for any purchase
           </p>
         </div>
       </div>

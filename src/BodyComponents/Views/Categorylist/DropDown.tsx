@@ -1,4 +1,4 @@
-import { NavbarItemType } from "@/MainComponents/utils/NavBarTypes";
+import { NavbarItemType } from "@/BodyComponents/Utils/NavBarTypes";
 import Link from "next/link";
 import { FC } from "react";
 

@@ -17,6 +17,7 @@ import {
   NavbarArray,
   NavbarItemType,
 } from "@/BodyComponents/Utils/NavBarTypes";
+import { Button } from "@/components/ui/button";
 
 const NavBar = () => {
   const [isNavbarOpen, setNavbarOpen] = useState<boolean>(false);
@@ -76,6 +77,9 @@ const NavBar = () => {
             </div>
             <ShoppingCart size={20} />
           </div>
+          <Button className="bg-blue-400 text-lg font-semibold text-black p-5 hover:text-white">
+            Login
+          </Button>
           <div>{/* <ThemeButton /> */}</div>
           <div onClick={() => setNavbarOpen(!isNavbarOpen)}>
             {isNavbarOpen ? (

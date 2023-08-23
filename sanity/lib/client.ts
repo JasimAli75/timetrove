@@ -1,10 +1,10 @@
-import { createClient } from 'next-sanity'
+import { createClient } from "next-sanity";
 
-import { apiVersion, dataset, projectId, useCdn } from '../env'
+import { apiVersion, dataset, projectId, useCdn } from "../env";
 
 export const client = createClient({
-  apiVersion,
-  dataset,
-  projectId,
-  useCdn,
-})
+  projectId: `${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}`, // Your project ID
+  dataset: `${process.env.NEXT_PUBLIC_SANITY_DATASET}`, // The name of the dataset in your Sanity account
+  useCdn: false, // `false` if you want to ensure fresh data
+  apiVersion: "v2023-08-20", // Use a specific API version (default: latest)
+});

@@ -19,7 +19,7 @@ export default async function Home() {
   return (
     <main>
       <Hero />
-      <SanityProducts />
+      <SanityProducts ProductData={response} />
       <ProductCategory />
       <ShipDetails />
       <PromoProduct />

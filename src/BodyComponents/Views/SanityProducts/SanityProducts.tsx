@@ -1,20 +1,15 @@
-// import ProductCard from "../ProductCard/ProductCard";
+"use client";
 
-// const SanityProducts = ({ ProductData }: any) => {
-//   return (
-//     <div className="flex gap-5">
-//       {ProductData.map((data: any, index: number) => (
-//         <ProductCard oneProductData={data} key={index} />
-//       ))}
-//     </div>
-//   );
-// };
+import ProductCard from "../ProductCard/ProductCard";
 
-// export default SanityProducts;
-import React from "react";
-
-function SanityProducts() {
-  return <div>Jasim ali sanity</div>;
-}
+const SanityProducts = ({ ProductData }: any) => {
+  return (
+    <div>
+      {ProductData.map((data: any, index: number) => (
+        <ProductCard oneProductData={data} key={index} />
+      ))}
+    </div>
+  );
+};
 
 export default SanityProducts;

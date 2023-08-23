@@ -19,16 +19,14 @@ import { Component, ReactNode } from "react";
 
 export default class SanityProducts extends Component<{ ProductData: any }> {
   render(): ReactNode {
-    const setting = {
-      centerMode: true,
+    const settings = {
       dots: true,
-
+      centerMode: true,
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 2000,
       autoplaySpeed: 2000,
-      cssEase: "linear",
+      pauseOnHover: true,
 
       responsive: [
         {
@@ -42,7 +40,7 @@ export default class SanityProducts extends Component<{ ProductData: any }> {
       ],
     };
     return (
-      <Slider {...setting}>
+      <Slider {...settings}>
         {this.props.ProductData.map((data: any, index: number) => (
           <ProductCard oneProductData={data} key={index} />
         ))}

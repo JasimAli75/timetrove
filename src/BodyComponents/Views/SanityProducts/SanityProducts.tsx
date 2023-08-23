@@ -1,5 +1,3 @@
-"use client";
-
 import ProductCard from "../ProductCard/ProductCard";
 
 const SanityProducts = ({ ProductData }: any) => {

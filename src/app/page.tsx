@@ -6,7 +6,16 @@ import PromoProduct from "@/BodyComponents/Views/PromoProducts";
 import SanityProducts from "@/BodyComponents/Views/SanityProducts/SanityProducts";
 import ShipDetails from "@/BodyComponents/Views/ShippingDetails/ShipDetails";
 
-export default function Home() {
+async function FetchData() {
+  let res = await fetch(`${BASE_PATH_FOR_API}/api/product`);
+
+  if (!res.ok) {
+    throw new Error("failed to fetch data");
+  }
+  return res.json();
+}
+export default async function Home() {
+  let { response } = await FetchData();
   return (
     <main>
       <Hero />

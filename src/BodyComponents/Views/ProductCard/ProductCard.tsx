@@ -12,10 +12,10 @@ function urlFor(source: any) {
 
 const ProductCard = ({ oneProductData }: any) => {
   return (
-    <div className="bg-gray-100 rounded-lg flex ml-5  flex-wrap gap-3 p-5 ">
+    <div className=" mb-10  ">
       {/* ProductCard */}
       <Link href={"/"}>
-        <div className="w-[280px] h-[400px] bg-white flex flex-col justify-between rounded-md overflow-hidden shadow-md  text-center hover:shadow-2xl ">
+        <div className="w-[300px] h-[400px] bg-white flex flex-col justify-between items-center rounded-md overflow-hidden shadow-lg  text-center hover:shadow-2xl ">
           <Image
             src={urlFor(oneProductData.image[0]).width(500).height(500).url()}
             width={300}
@@ -24,7 +24,7 @@ const ProductCard = ({ oneProductData }: any) => {
           />{" "}
         </div>
       </Link>
-      <div>
+      <div className="mt-5">
         <h6 className="mb-2 font-bold text-lg">{oneProductData.productName}</h6>
 
         <p className="mb-2">${oneProductData.price}</p>

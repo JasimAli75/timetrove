@@ -1,13 +1,10 @@
 import BASE_PATH_FOR_API from "@/BodyComponents/Shared/BasePath";
-import { responseType } from "@/BodyComponents/Utils/ProductsDataArrayAndType";
 import Hero from "@/BodyComponents/Views/Hero/Hero";
 import Newsletter from "@/BodyComponents/Views/Newsletter/Newsletter";
-import ProductCard from "@/BodyComponents/Views/ProductCard/ProductCard";
 import ProductCategory from "@/BodyComponents/Views/ProductCategory/ProductCategory";
 import PromoProduct from "@/BodyComponents/Views/PromoProducts";
 import SanityProducts from "@/BodyComponents/Views/SanityProducts/SanityProducts";
 import ShipDetails from "@/BodyComponents/Views/ShippingDetails/ShipDetails";
-import Image from "next/image";
 
 async function FetchAllProductData() {
   let res = await fetch(`${BASE_PATH_FOR_API}/api/product`);

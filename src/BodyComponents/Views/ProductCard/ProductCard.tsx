@@ -14,8 +14,8 @@ const ProductCard = ({ oneProductData }: any) => {
   return (
     <div className=" mb-10  ">
       {/* ProductCard */}
-      <Link href={"/"}>
-        <div className="w-[300px] h-[400px] bg-white flex flex-col justify-between items-center rounded-md overflow-hidden shadow-lg  text-center hover:shadow-2xl ">
+      <Link href={`/ProductCatalog/${oneProductData.slug.current}`}>
+        <div className="w-[300px] h-[400px] bg-white flex flex-col justify-between items-center rounded-md overflow-hidden shadow-lg  text-center hover:shadow-2xl hover:scale-105 duration-300 ">
           <Image
             src={urlFor(oneProductData.image[0]).width(500).height(500).url()}
             width={300}
